@@ -39,7 +39,7 @@ head {
 }
 
 .fab {
-    font-size: 2rem;
+  font-size: 2rem;
   background: radial-gradient(
     circle at 30% 107%,
     #141414 0%,
@@ -53,4 +53,42 @@ head {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 1rem;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexitem {
+  /* */
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  margin: 2rem;
+}
+
+.read-more-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 2rem;
+  border-radius: 2px;
+  line-height: 1.4rem;
+}
+
+.read-more-btn {
+  color: blue;
+}
+
+.read-more-text {
+  display: none;
+}
+
+.read-more-text--show {
+  display: inline;
 }
