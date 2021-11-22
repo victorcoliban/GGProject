@@ -16,7 +16,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 7rem;
+  padding: 1rem 5rem;
   box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 }
 .bar__logo{
@@ -54,11 +54,9 @@ header {
 
 .media {
   display: flex;
-
 }
 
 .flex__container {
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-content: center;
@@ -73,6 +71,10 @@ header {
   padding: 1rem;
   flex-direction: column;
   justify-content: center;
+}
+
+.flex__container__items__content {
+  display: flex;
   flex-direction: column;
 }
 
@@ -85,17 +87,53 @@ h2 {
   margin-bottom: 10px;
 }
 
-.flex__column {
-  display: flex;
+@media (min-width: 1024px) {
+  .flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex__container__items {
+    flex: 1 1 30%; /*grow | shrink | basis */
+  }
 }
 
-@media (max-width: 768px)  {
+@media (min-width: 768px)  {
+  .flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: baseline;
+  }
+
+  .flex__container__items {
+    width: 33%;
+    box-shadow: unset;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .bar__items a {
+    padding: 1rem;
+  }
+
   h2 {
     display: flex;
     justify-content: center;
   }
-  
-  
+
+  .fab {
+    font-size: 1.5rem;
+  }
+
+  .bar__logo {
+    font-size: small;
+    margin-right: 0rem;
+  }
 }
 
 @media (max-width: 425px) {
