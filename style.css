@@ -76,6 +76,7 @@ header {
 .flex__container__items__content {
   display: flex;
   flex-direction: column;
+  
 }
 
 a {
@@ -85,7 +86,7 @@ a {
 
 h2 {
   margin-bottom: 10px;
-}
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;}
 
 @media (min-width: 1024px) {
   .flex__container {
@@ -124,6 +125,7 @@ h2 {
   h2 {
     display: flex;
     justify-content: center;
+
   }
 
   .fab {
@@ -192,3 +194,4 @@ h2 {
     margin-right: 0.2rem;
   }
 }
+
