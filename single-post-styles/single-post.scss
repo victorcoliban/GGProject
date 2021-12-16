@@ -1,0 +1,49 @@
+$boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
+
+.navbar {
+    box-shadow: $boxShadow;
+}
+
+.card-body {
+    box-shadow: $boxShadow;
+}
+
+.card {
+    border: unset;
+}
+
+.p-5 {
+    padding: 1rem!important;
+}
+
+@media (max-width: 768px) {
+    .media {
+        display: none;
+    }
+}
+
+.form-inline {
+    display: flex;
+    position: static;
+}
+
+.media {
+    padding-right: 3rem;
+}
+
+//.image-size 
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin: 0 0 100px; /* bottom = footer height */
+  }
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+  }

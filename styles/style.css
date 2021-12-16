@@ -1,0 +1,35 @@
+.navbar {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: unset;
+}
+
+.p-5 {
+  padding: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .media {
+    display: none;
+  }
+}
+
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+}
+
+.media {
+  padding-right: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

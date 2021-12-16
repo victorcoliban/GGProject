@@ -1,0 +1,53 @@
+.navbar {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: unset;
+}
+
+.p-5 {
+  padding: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .media {
+    display: none;
+  }
+}
+
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+}
+
+.media {
+  padding-right: 3rem;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px;
+  /* bottom = footer height */
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
+/*# sourceMappingURL=single-post.css.map */
