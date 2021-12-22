@@ -8,18 +8,16 @@
           box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
+.card-body .img-fluid {
+  height: 150px;
+}
+
 .card {
   border: unset;
 }
 
 .p-5 {
   padding: 1rem !important;
-}
-
-@media (max-width: 768px) {
-  .media {
-    display: none;
-  }
 }
 
 .form-inline {
@@ -31,5 +29,13 @@
 
 .media {
   padding-right: 3rem;
+}
+
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

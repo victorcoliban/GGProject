@@ -6,6 +6,9 @@ $boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
 
 .card-body {
     box-shadow: $boxShadow;
+    .img-fluid {
+        height: 150px;
+    } 
 }
 
 .card {
@@ -14,12 +17,6 @@ $boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
 
 .p-5 {
     padding: 1rem!important;
-}
-
-@media (max-width: 768px) {
-    .media {
-        display: none;
-    }
 }
 
 .form-inline {
@@ -31,4 +28,10 @@ $boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
     padding-right: 3rem;
 }
 
-//.image-size 
+footer {
+    position: static ;  
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+  }
