@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./single-post-styles/single-post.css">
-    <title>Proiect1 GlobalGrads</title>
+    <title>Global Grads</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
@@ -19,20 +19,19 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a href="#" class="navbar-brand">GLOBAL GRADS</a>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-0 mx-1 my-sm-0" type="submit">Search</button>
-            </form>
             <button 
-                class="navbar-toggler my-1" 
+                class="navbar-toggler mb-2 mb-md-0" 
                 type="button" 
                 data-bs-toggle="collapse" 
                 data-bs-target="#navmenu"
-            >
+                >
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <a href="#" class="navbar-brand">GLOBAL GRADS</a>
+            <form class="form-inline search-bar">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-0 mx-1 my-sm-0" type="submit">Search</button>
+            </form>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -48,22 +47,48 @@
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
+                        <a href="single-post.html" class="nav-link blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
+
                 </ul>
             </div>
+
+            <div class="media">
+                <img class="media-img" src="media-blog/github1.png">
+                <img class="media-img" src="media-blog/telegram.png">
+                <img class="media-img" src="media-blog/twitter.png">
+            </div>
+
         </div>
     </nav>
-    <div class="container p-5 mx-auto">
-        <div class="card">
+    <div class="container-body p-5 mx-auto">
+        <div class="card mx-auto">
             <div class="card-body">
                 <h1 class="title text-center mt-0 mb-4 mx-auto">
-                    Amazing facts about dogs 
+                    Amazing Facts About Dogs 
                 </h1>
-                <div class="image-top">
+                <div class="d-flex justify-content-center flex-row">
+                    <div class="mr-2 p-2">
+                      <img class="rounded-circle card-img-blog" src="media/imgBlog.jpg">
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-center align-items-md-center">
+                      <span class="mb-0">Victor Coliban</span>
+                      <div class="d-none d-md-block mx-1"> · </div>
+              
+                      <div class="d-flex flex-lg-row">
+                        <span class="text-muted mb-0">Jan 02, 2022</span>
+                        <div class="mx-1"> · </div>
+                        <span class="text-muted mb-0">2 min read</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="image-top pt-4">
                     <img src="media/dog.jpg" class="card-img-top rounded" alt="card image cap">
                     <div class="bottom-left">
-                        A   dog playing hide and seek.
+                        Dog playing hide and seek.
                     </div>
                 </div>
                 <p class="img-description pt-3">
@@ -108,15 +133,16 @@
                     lungs at the same time, which means they can breathe freely and still work out what that smell is!
                 </p>    
             </div>
+        </div>
         <h1 class="text-center p-5">
             Missing dogs section
         </h1>
-        <div class="row gy-3 mx-auto">
-            <div class="col-lg-4 col-xs-12">
-                <div class="card">
+        <div class="row container-fluid">
+            <div class="col-lg-4 col-xs-12 pb-2 d-flex justify-content-center">
+                <div class="card h-100">
                     <div class="card-body mx-auto">
                         <div class="img-wrap">
-                            <img src="media/missingDog1.jpg" class="img-fluid">
+                            <img src="media/missingDog1x.jpg" class="img-fluid">
                             <div class="img-description-layer">
                                 <p class="img-description p-1 text-center"> 
                                     This is Charlie and he's been missing since last Thursday. 
@@ -128,11 +154,11 @@
                     </div>
                 </div>  
             </div>
-            <div class="col-lg-4 col-xs-12">
-                <div class="card bg-white h-100">
+            <div class="col-lg-4 col-xs-12 pb-2 d-flex justify-content-center">
+                <div class="card h-100">
                     <div class="card-body mx-auto">
                         <div class="img-wrap">
-                            <img src="media/missingDog2.jpg" class="img-fluid">
+                            <img src="media/missingDog2x.jpg" class="img-fluid">
                             <div class="img-description-layer">
                                 <p class="img-description p-1 text-center">
                                     Max was last seen on Park Street near the French Bakery. 
@@ -143,11 +169,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-xs-12">
-                <div class="card bg-white h-100">
+            <div class="col-lg-4 col-xs-12 pb-2 d-flex justify-content-center">
+                <div class="card h-100">
                     <div class="card-body mx-auto">
                         <div class="img-wrap">
-                            <img src="media/missingDog3.jpg" class="img-fluid">
+                            <img src="media/missingDog3x.jpg" class="img-fluid">
                             <div class="img-description-layer">
                                 <p class="img-description p-1 text-center">
                                     She is Daisy. Missing since Bonfire Night when she got very scared of fireworks. 

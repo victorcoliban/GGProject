@@ -45,8 +45,6 @@ html {
   /* relevant styles */
   .img-wrap {
     position: relative;
-    height: 200px;
-    width: 257px;
   }
   
   .img-description-layer {
@@ -103,9 +101,40 @@ html {
     left: 18px;
   }
 
-  @media (min-width: 1024px) { 
-    .container {
+  @media (min-width: 1024px) {
+    .card {
       width: 75%;
-    }  
+    }
   }
 
+  .card-img-blog {
+    width: 4em;
+    height: 3em;
+  }
+  
+  .row {
+    --bs-gutter-x: none;
+  }
+
+  .blog {
+    text-decoration:underline 1px solid #198754;
+    text-underline-offset: 10px;
+  }
+
+  @media (max-width: 1439px) {
+  .media {
+    display: none;
+   }
+  }
+
+  .media-img {
+    width: 2em;
+    height: 2em;
+  }
+
+  @media (max-width: 475px) {
+    .form-inline {
+      width: 100%;
+      max-width: none;
+    }
+  }

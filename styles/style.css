@@ -38,4 +38,22 @@ footer {
   height: 100px;
   width: 100%;
 }
+
+@media (max-width: 1439px) {
+  .media {
+    display: none;
+  }
+}
+
+.media-img {
+  width: 2em;
+  height: 2em;
+}
+
+@media (max-width: 475px) {
+  .form-inline {
+    width: 100%;
+    max-width: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

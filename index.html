@@ -19,25 +19,19 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a href="#" class="navbar-brand">GLOBAL GRADS</a>
-            <!--<div class="media">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-linkedin"></i>
-            </div>-->
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-0 mx-1 my-sm-0" type="submit">Search</button>
-            </form>
             <button 
-                class="navbar-toggler my-1" 
+                class="navbar-toggler mb-2 mb-md-0" 
                 type="button" 
                 data-bs-toggle="collapse" 
                 data-bs-target="#navmenu"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <a href="#" class="navbar-brand">GLOBAL GRADS</a>
+            <form class="form-inline search-bar">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-0 mx-1 my-sm-0" type="submit">Search</button>
+            </form>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -55,10 +49,16 @@
                     <li class="nav-item">
                         <a href="single-post.html" class="nav-link">Blog</a>
                     </li>
-
+                    <li class="nav-item home">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
                 </ul>
             </div>
-
+            <div class="media">
+                <img class="media-img" src="media-blog/github1.png">
+                <img class="media-img" src="media-blog/telegram.png">
+                <img class="media-img" src="media-blog/twitter.png">
+            </div>
         </div>
     </nav>
     <section class="p-5">
@@ -70,27 +70,18 @@
                             <div class="image-height">
                                 <img src="media/cocker.jpg" class="img-fluid">
                             </div>
-                            <h2 class="card-title mb-3 pb-3">Cocker Spaniel</h2>
-                            
-                            <p>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dog1" aria-expanded="false" aria-controls="dog1">
-                                  show/hide text...
-                                </button>
+                            <h2 class="card-title mb-3 pb-3">Cocker Spaniel</h2>                          
+                            <p class="card-text"> 
+                                Cocker Spaniels are dogs belonging to two breeds of the spaniel dog type: the American Cocker 
+                                Spaniel and the English Cocker Spaniel, both of which are commonly called simply Cocker Spaniel 
+                                in their countries of origin. 
                             </p>
-                            <div class="collapse" id="dog1">
-                                <div class="card card-body">
-                                    <p class="card-text"> 
-                                        Cocker Spaniels are dogs belonging to two breeds of the spaniel dog type: the American Cocker 
-                                        Spaniel and the English Cocker Spaniel, both of which are commonly called simply Cocker Spaniel 
-                                        in their countries of origin. 
-                                    </p>
-                                    <p class="card-text">     
-                                        In the early 20th century, Cocker Spaniels also included small 
-                                        hunting spaniels. In the early 20th century, Cocker Spaniels also included small hunting 
-                                        spaniels.
-                                    </p>                                
-                                </div>
-                            </div>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p class="card-text">     
+                                In the early 20th century, Cocker Spaniels also included small 
+                                hunting spaniels. In the early 20th century, Cocker Spaniels also included small hunting 
+                                spaniels.
+                            </p>       -->                                                  
                         </div>
                     </div>  
                 </div>
@@ -102,26 +93,18 @@
                             </div>
                             <h2 class="card-title mb-3 pb-3">Basset Hound</h2>
                             <p>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dog2" aria-expanded="false" aria-controls="dog2">
-                                  show/hide text...
-                                </button>
+                                Bassets are large, short, solid and long, with curved sabre tails held high over their long backs.
+                                An adult dog weighs between 20 and 35 kilograms (44 and 77 lb).
+                                This breed, relative to its size, is heavier-boned than any other.
                             </p>
-                            <div class="collapse" id="dog2">
-                                <div class="card card-body">
-                                    <p>
-                                        Bassets are large, short, solid and long, with curved sabre tails held high over their long backs.
-                                        An adult dog weighs between 20 and 35 kilograms (44 and 77 lb).
-                                        This breed, relative to its size, is heavier-boned than any other.
-                                    </p>
-                                    <p>
-                                        This breed, like its ancestor the Bloodhound, has a hanging skin structure, which
-                                         causes the face to tend to have a sad look;
-                                    </p>
-                                </div>
-                            </div>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p>
+                                This breed, like its ancestor the Bloodhound, has a hanging skin structure, which
+                                    causes the face to tend to have a sad look;
+                            </p> -->
                         </div>
                     </div>
-                </div>
+                </div>   
                 <div class="col-lg-4 col-md-6 col-xs-12">
                     <div class="card bg-white h-100">
                         <div class="card-body text-center">
@@ -130,23 +113,15 @@
                             </div>
                             <h2 class="card-title mb-3 pb-3">Black Retriever</h2>
                             <p>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dog3" aria-expanded="false" aria-controls="dog3">
-                                  show/hide text...
-                                </button>
-                            </p>
-                            <div class="collapse" id="dog3">
-                                <div class="card card-body">
-                                    <p>
-                                        The Black Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, 
-                                        such as ducks and upland game birds, during hunting and shooting parties.
-                                    </p>   
-                                    <p> 
-                                        The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their 
-                                        soft mouth. Golden retrievers have an instinctive love of water, 
-                                        and are easy to train to basic or advanced obedience standards.
-                                    </p>
-                                </div>
-                            </div>
+                                The Black Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, 
+                                such as ducks and upland game birds, during hunting and shooting parties.
+                            </p>   
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p> 
+                                The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their 
+                                soft mouth. Golden retrievers have an instinctive love of water, 
+                                and are easy to train to basic or advanced obedience standards.
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -158,21 +133,13 @@
                             </div>
                             <h2 class="card-title mb-3 pb-3">Beagle</h2>
                             <p>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dog4" aria-expanded="false" aria-controls="dog4">
-                                  show/hide text...
-                                </button>
-                            </p>
-                            <div class="collapse" id="dog4">
-                                <div class="card card-body">
-                                    <p>
-                                        The origin of the beagle is not known. In the 11th century, William the Conqueror brought the St. 
-                                        Hubert Hound and the Talbot hound to Britain. 
-                                    </p> 
-                                    <p>   
-                                        In Britain both of these strains were then crossed with Greyhounds to give them speed and stamina for deer hunting.
-                                    </p>
-                                </div>
-                            </div>
+                                The origin of the beagle is not known. In the 11th century, William the Conqueror brought the St. 
+                                Hubert Hound and the Talbot hound to Britain. 
+                            </p> 
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p>   
+                                In Britain both of these strains were then crossed with Greyhounds to give them speed and stamina for deer hunting.
+                            </p> -->
                         </div>
                     </div>
                 </div>
@@ -184,24 +151,16 @@
                             </div>
                             <h2 class="card-title mb-3 pb-3">German Sheperd</h2>
                             <p>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dog5" aria-expanded="false" aria-controls="dog5">
-                                  show/hide text...
-                                </button>
+                                German Shepherds are medium to large-sized dogs. The breed standard height at the withers is 60–65 cm 
+                                (24–26 in) for males, and 55–60 cm (22–24 in) for 
+                                females. 
                             </p>
-                            <div class="collapse" id="dog5">
-                                <div class="card card-body">
-                                    <p>
-                                        German Shepherds are medium to large-sized dogs. The breed standard height at the withers is 60–65 cm 
-                                        (24–26 in) for males, and 55–60 cm (22–24 in) for 
-                                        females. 
-                                    </p>
-                                    <p>    
-                                        German Shepherds are longer than they are tall, with an ideal proportion of 10 to 8+1⁄2. 
-                                        The AKC official breed standard does not set a 
-                                        standard weight range.
-                                    </p>
-                                </div>
-                            </div>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p>    
+                                German Shepherds are longer than they are tall, with an ideal proportion of 10 to 8+1⁄2. 
+                                The AKC official breed standard does not set a 
+                                standard weight range. -->
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -213,26 +172,18 @@
                             </div>
                             <h2 class="card-title mb-3 pb-3">Golden Retriever</h2>
                             <p>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dog6" aria-expanded="false" aria-controls="dog6">
-                                  show/hide text...
-                                </button>
-                            </p>
-                            <div class="collapse" id="dog6">
-                                <div class="card card-body">
-                                    <p>
-                                        The Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, such as
-                                        ducks and upland game birds, during hunting and shooting parties.
-                                    </p>    
-                                    <p>
-                                        The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their 
-                                        soft mouth. 
-                                    </p>
-                                    <p>    
-                                        Golden retrievers have an instinctive love of water, 
-                                        and are easy to train to basic or advanced obedience standards.
-                                    </p>
-                                </div>
-                            </div>
+                                The Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, such as
+                                ducks and upland game birds, during hunting and shooting parties.
+                            </p>  
+                            <button type="button" class="btn btn-primary">Read more...</button>  
+                            <!--<p>
+                                The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their 
+                                soft mouth. 
+                            </p> 
+                            <p>    
+                                Golden retrievers have an instinctive love of water, 
+                                and are easy to train to basic or advanced obedience standards.
+                            </p> -->
                         </div>
                     </div>
                 </div>
