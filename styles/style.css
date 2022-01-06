@@ -55,5 +55,8 @@ footer {
     width: 100%;
     max-width: none;
   }
+  .navbar-brand {
+    margin-right: 0.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
