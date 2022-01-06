@@ -12,10 +12,6 @@
   border: unset;
 }
 
-.p-5 {
-  padding: 1rem !important;
-}
-
 .form-inline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,14 +23,11 @@
   padding-right: 3rem;
 }
 
-html {
-  position: center;
-  min-height: 100%;
-}
-
 body {
   margin: 0 0 100px;
   /* bottom = footer height */
+  position: center;
+  min-height: 100%;
 }
 
 footer {

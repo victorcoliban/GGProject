@@ -16,10 +16,6 @@
   border: unset;
 }
 
-.p-5 {
-  padding: 1rem !important;
-}
-
 .form-inline {
   display: -webkit-box;
   display: -ms-flexbox;
