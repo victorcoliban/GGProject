@@ -59,4 +59,10 @@ footer {
     margin-right: 0.2rem;
   }
 }
+
+.home {
+  -webkit-text-decoration: underline 1px solid #198754;
+          text-decoration: underline 1px solid #198754;
+  text-underline-offset: 10px;
+}
 /*# sourceMappingURL=style.css.map */
