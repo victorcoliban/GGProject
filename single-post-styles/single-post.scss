@@ -96,10 +96,8 @@ $boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
     left: 18px;
   }
 
-  @media (min-width: 1024px) {
-    .card {
-      width: 75%;
-    }
+  .main-card {
+    width: 75%;
   }
 
   .card-img-blog {
