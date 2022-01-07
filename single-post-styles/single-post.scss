@@ -116,9 +116,9 @@ $boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
     text-underline-offset: 10px;
   }
 
-  @media (max-width: 1439px) {
-  .media {
-    display: none;
+  @include media-breakpoint-up(xxl) { 
+    .media {
+      display: none;
    }
   }
 
@@ -127,7 +127,7 @@ $boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
     height: 2em;
   }
 
-  @media (max-width: 475px) {
+  @include media-breakpoint-up(sm) {   
     .form-inline {
       width: 100%;
       max-width: none;
@@ -137,3 +137,4 @@ $boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
       margin-right: 0.2rem;
     }
   }
+
