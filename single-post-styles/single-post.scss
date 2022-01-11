@@ -1,0 +1,138 @@
+$boxShadow : 0 2px 12px 0 rgba(0, 0, 0, 0.10);
+
+.navbar {
+    box-shadow: $boxShadow;
+}
+
+.card-body {
+    box-shadow: $boxShadow;
+}
+
+.card {
+    border: unset;
+}
+
+.form-inline {
+    display: flex;
+    position: static;
+}
+
+.media {
+    padding-right: 3rem;
+}
+
+//.image-size 
+
+  body {
+    margin: 0 0 100px; /* bottom = footer height */
+    position: center;
+    min-height: 100%;
+  }
+  
+  footer {
+    position: static;  
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+  }
+    
+  /* relevant styles */
+  .img-wrap {
+    position: relative;
+  }
+  
+  .img-description-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(11, 11, 12, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+  
+  .img-wrap:hover .img-description-layer {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .img-description {
+    transition: .2s;
+    transform: translateY(1em);
+  }
+  
+  .img-wrap:hover .img-description {
+    transform: translateY(0);
+  }
+
+  .card-1 {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+  }
+
+  .img-fluid {
+    height: 200px;
+  }
+
+  .image-top {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 18px;
+  }
+
+  .main-card {
+    width: 75%;
+  }
+
+  .card-img-blog {
+    width: 4em;
+    height: 3em;
+  }
+  
+  .row {
+    --bs-gutter-x: none;
+  }
+
+  .blog {
+    text-decoration:underline 1px solid #198754;
+    text-underline-offset: 10px;
+  }
+
+  @include media-breakpoint-up(xxl) { 
+    .media {
+      display: none;
+   }
+  }
+
+  .media-img {
+    width: 2em;
+    height: 2em;
+  }
+
+  @include media-breakpoint-up(sm) {   
+    .form-inline {
+      width: 100%;
+      max-width: none;
+    }
+
+    .navbar-brand {
+      margin-right: 0.2rem;
+    }
+  }
+

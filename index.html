@@ -4,36 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Proiect1 GlobalGrads</title>
-    <script src="https://kit.fontawesome.com/246bb70d84.js" crossorigin="anonymous"></script>
-    <!--<style>
-        [class*="col"] {
-            box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
-        }
-    </style>-->
 </header>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;
-                                                             box-shadow:  0 2px 12px 0 rgb(0 0 0 / 10%);">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a href="#" class="navbar-brand">GLOBAL GRADS</a>
-            <div class="media">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-linkedin"></i>
-            </div>
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navmenu"
-            >
+            <button class="navbar-toggler mb-2 mb-md-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <a href="#" class="navbar-brand">GLOBAL GRADS</a>
+            <form class="form-inline search-bar">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-0 mx-1 my-sm-0" type="submit">Search</button>
+            </form>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -48,123 +36,221 @@
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="single-post.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item home">
+                        <a href="index.html" class="nav-link home">Home</a>
+                    </li>
                 </ul>
             </div>
-
+            <div class="media">
+                <img class="media-img" src="media-blog/github1.png">
+                <img class="media-img" src="media-blog/telegram.png">
+                <img class="media-img" src="media-blog/twitter.png">
+            </div>
         </div>
     </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <section class="p-5">
+    <section class="p-3">
         <div class="container">
             <div class="row gy-3">
                 <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="card bg-white" style="box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);">
+                    <div class="card bg-white h-100">
                         <div class="card-body text-center">
-                            <img src="media/cocker.jpg" class="img-fluid" style="padding-bottom: 11px;">
-                            <h2 class="card-title mb-3">Cocker Spaniel</h2>
-                            <p class="card-text"> 
-                                Cocker Spaniels are dogs belonging to two breeds of the spaniel dog type: the American Cocker 
-                                Spaniel and the English Cocker Spaniel, both of which are commonly called simply Cocker Spaniel 
-                                in their countries of origin. In the early 20th century, Cocker Spaniels also included small 
+                            <div class="image-height">
+                                <img src="media/cocker.jpg" class="img-fluid">
+                            </div>
+                            <h2 class="card-title mb-3 pb-3">Cocker Spaniel</h2>
+                            <p class="lead card-text container-fluid">
+                                Cocker Spaniels are dogs belonging to two breeds of the spaniel dog type: the American
+                                Cocker
+                                Spaniel and the English Cocker Spaniel, both of which are commonly called simply Cocker
+                                Spaniel
+                                in their countries of origin.
+                            </p>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p class="card-text">     
+                                In the early 20th century, Cocker Spaniels also included small 
                                 hunting spaniels. In the early 20th century, Cocker Spaniels also included small hunting 
                                 spaniels.
-                            </p>
-                            <button class="btn btn-primary">See more...</button>
+                            </p>       -->
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="card bg-white" style="box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);">
+                    <div class="card bg-white h-100">
                         <div class="card-body text-center">
-                            <img src="media/basset.jpg" class="img-fluid" style="padding-bottom: 42px;">
-
-                            <h2>Basset Hound</h2>
-                            <p>
-                                Bassets are large, short, solid and long, with curved sabre tails held high over their long backs.
+                            <div class="image-height">
+                                <img src="media/basset.jpg" class="img-fluid">
+                            </div>
+                            <h2 class="card-title mb-3 pb-3">Basset Hound</h2>
+                            <p class="lead container-fluid">
+                                Bassets are large, short, solid and long, with curved sabre tails held high over their
+                                long backs.
                                 An adult dog weighs between 20 and 35 kilograms (44 and 77 lb).
                                 This breed, relative to its size, is heavier-boned than any other.
                             </p>
-                            <p>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p>
                                 This breed, like its ancestor the Bloodhound, has a hanging skin structure, which
-                                 causes the face to tend to have a sad look;
-                            </p>
-                            <button class="btn btn-primary">See more...</button>
+                                    causes the face to tend to have a sad look;
+                            </p> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="card bg-white" style="box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);">
+                    <div class="card bg-white h-100">
                         <div class="card-body text-center">
-                            <img src="media/retriever.jpeg" class="img-fluid">
-
-                            <h2>Black Golden Retriever</h2>
-                            <p>
-                                The Black Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, 
+                            <div class="image-height">
+                                <img src="media/retriever.jpeg" class="img-fluid">
+                            </div>
+                            <h2 class="card-title mb-3 pb-3">Black Retriever</h2>
+                            <p class="lead container-fluid">
+                                The Black Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl,
                                 such as ducks and upland game birds, during hunting and shooting parties.
+                            </p>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p> 
                                 The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their 
                                 soft mouth. Golden retrievers have an instinctive love of water, 
                                 and are easy to train to basic or advanced obedience standards.
-                            </p>
-                            <button class="btn btn-primary">See more...</button>
+                            </p> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="card bg-white" style="box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);">
+                    <div class="card bg-white h-100">
                         <div class="card-body text-center">
-                            <img src="media/beagle.jpg" class="img-fluid" style="padding-bottom: 33px;">
-                            <h2>Beagle</h2>
-                            <p>
-                                The origin of the beagle is not known. In the 11th century, William the Conqueror brought the St. 
-                                Hubert Hound and the Talbot hound to Britain. In Britain
-                                both of these strains were then crossed with Greyhounds to give them speed and stamina for deer 
-                                hunting.
+                            <div class="image-height">
+                                <img src="media/beagle.jpg" class="img-fluid">
+                            </div>
+                            <h2 class="card-title mb-3 pb-3">Beagle</h2>
+                            <p class="lead container-fluid">
+                                The origin of the beagle is not known. In the 11th century, William the Conqueror
+                                brought the St.
+                                Hubert Hound and the Talbot hound to Britain.
                             </p>
-                            <button class="btn btn-primary">See more...</button>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p>   
+                                In Britain both of these strains were then crossed with Greyhounds to give them speed and stamina for deer hunting.
+                            </p> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="card bg-white" style="box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);">
+                    <div class="card bg-white h-100">
                         <div class="card-body text-center">
-                            <img src="media/germanSheperd.jpg" class="img-fluid" style="padding-bottom: 33px;">
-                            <h2>German Sheperd</h2>
-                            <p>
-                                German Shepherds are medium to large-sized dogs. The breed standard height at the withers is 60–65 cm 
-                                (24–26 in) for males, and 55–60 cm (22–24 in) for 
-                                females. German Shepherds are longer than they are tall, with an ideal proportion of 10 to 8+1⁄2. 
+                            <div class="image-height">
+                                <img src="media/germanSheperd.jpg" class="img-fluid">
+                            </div>
+                            <h2 class="card-title mb-3 pb-3">German Sheperd</h2>
+                            <p class="lead container-fluid">
+                                German Shepherds are medium to large-sized dogs. The breed standard height at the
+                                withers is 60–65 cm
+                                (24–26 in) for males, and 55–60 cm (22–24 in) for
+                                females.
+                            </p>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p>    
+                                German Shepherds are longer than they are tall, with an ideal proportion of 10 to 8+1⁄2. 
                                 The AKC official breed standard does not set a 
-                                standard weight range.
+                                standard weight range. -->
                             </p>
-                            <button class="btn btn-primary">See more...</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-xs-12">
-                    <div class="card bg-white" style="box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);">
+                    <div class="card bg-white h-100">
                         <div class="card-body text-center">
-                            <img src="media/goldenRetriever.jpg" class="img-fluid" style="padding-bottom: 42px;">
-                            <h2>Golden Retriever</h2>
-                            <p>
-                                The Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, such as
+                            <div class="image-height">
+                                <img src="media/goldenRetriever.jpg" class="img-fluid">
+                            </div>
+                            <h2 class="card-title mb-3 pb-3">Golden Retriever</h2>
+                            <p class="lead container-fluid">
+                                The Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl,
+                                such as
                                 ducks and upland game birds, during hunting and shooting parties.
-                                The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their 
-                                soft mouth. Golden retrievers have an instinctive love of water, 
-                                and are easy to train to basic or advanced obedience standards.
                             </p>
-                            <button class="btn btn-primary">See more...</button>
+                            <button type="button" class="btn btn-primary">Read more...</button>
+                            <!--<p>
+                                The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their 
+                                soft mouth. 
+                            </p> 
+                            <p>    
+                                Golden retrievers have an instinctive love of water, 
+                                and are easy to train to basic or advanced obedience standards.
+                            </p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+    
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <i class="fab fa-google-plus-g"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <i class="fab fa-linkedin-in"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fab fa-dribbble"> </i>
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+    
+        </div>
+        <!-- Footer Elements -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <a href="https://mdbootstrap.com/"> Global Grads</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->     
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/246bb70d84.js" crossorigin="anonymous">
+    </script>        
+
 </body>
-<footer>
-</footer>
 </html>

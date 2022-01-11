@@ -1,0 +1,153 @@
+.navbar {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: unset;
+}
+
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+}
+
+.media {
+  padding-right: 3rem;
+}
+
+body {
+  margin: 0 0 100px;
+  /* bottom = footer height */
+  position: center;
+  min-height: 100%;
+}
+
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
+
+/* relevant styles */
+.img-wrap {
+  position: relative;
+}
+
+.img-description-layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(11, 11, 12, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* transition effect. not necessary */
+  -webkit-transition: opacity .2s, visibility .2s;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .img-description-layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img-description {
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: translateY(1em);
+          transform: translateY(1em);
+}
+
+.img-wrap:hover .img-description {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card-1 {
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
+}
+
+.img-fluid {
+  height: 200px;
+}
+
+.image-top {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 10px;
+  left: 18px;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 75%;
+  }
+}
+
+.card-img-blog {
+  width: 4em;
+  height: 3em;
+}
+
+.row {
+  --bs-gutter-x: none;
+}
+
+.blog {
+  -webkit-text-decoration: underline 1px solid #198754;
+          text-decoration: underline 1px solid #198754;
+  text-underline-offset: 10px;
+}
+
+@media (max-width: 1439px) {
+  .media {
+    display: none;
+  }
+}
+
+.media-img {
+  width: 2em;
+  height: 2em;
+}
+
+@media (max-width: 475px) {
+  .form-inline {
+    width: 100%;
+    max-width: none;
+  }
+  .navbar-brand {
+    margin-right: 0.2rem;
+  }
+}
+/*# sourceMappingURL=single-post.css.map */

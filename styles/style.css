@@ -1,0 +1,64 @@
+.navbar {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-body .img-fluid {
+  height: 150px;
+}
+
+.card {
+  border: unset;
+}
+
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+}
+
+.media {
+  padding-right: 3rem;
+}
+
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
+
+@media (max-width: 1439px) {
+  .media {
+    display: none;
+  }
+}
+
+.media-img {
+  width: 2em;
+  height: 2em;
+}
+
+@media (max-width: 475px) {
+  .form-inline {
+    width: 100%;
+    max-width: none;
+  }
+  .navbar-brand {
+    margin-right: 0.2rem;
+  }
+}
+
+.home {
+  -webkit-text-decoration: underline 1px solid #198754;
+          text-decoration: underline 1px solid #198754;
+  text-underline-offset: 10px;
+}
+/*# sourceMappingURL=style.css.map */
