@@ -42,7 +42,7 @@ console.log(sortDrinkByPrice2);
 let wordInString = "UcUNFYGaFYFYGtNUH";
 
 const detectWord = () => {
-    var output = '';
+    let output = '';
     for (let i = 0; i < wordInString.length; i++) {
         let character = wordInString.charAt(i);
         if (character == character.toLowerCase()) {
@@ -70,26 +70,29 @@ const isTrue01 = expression => {
     return operators[operator]?.(+a, +b) || false;
 }
 
+// Malicious code: invoking eval can crash a computer. 
+// For example: if you use eval server-side and a mischievous user decides to use an infinite loop as their username
+
 console.log(isTrue01(str))
 
-const isTrue02 = expression => {
+const isTrue02 = expression => { 
 if (eval(expression) === true) {
-    console.log("true");
+    return true;
     }
 else {
-    console.log("false");
+    return false;
     }
 }
 
-isTrue02(str)
+console.log(isTrue02(str))
 
 // aceeasi functie ca mai sus scrisa altfel
 
 const isTrue03 = expression => {
-    console.log(eval(expression) ? true: (eval(expression) === true));
+    return eval(expression) ? true: (eval(expression) === true);
 }
 
-isTrue03(str)
+console.log(isTrue03(str))
 
 // 4. Given an object of how many more pages each ink color can print, output the maximum number of pages the printer can print
 
@@ -101,7 +104,7 @@ const inkLevels = {
     "yellow": 10
 };
 
-let result = () => {
+const result = () => {
     const minValue = Math.min.apply(null, Object.values(inkLevels));
     console.log(minValue)
 }
@@ -112,21 +115,27 @@ result()
 
 // Create a function that sorts an array and removes all duplicate items from it.
 
-const array = [1, 3, 3, 5, 5, 5];
+// A
+
+let array = [1, 3, 3, 5, 5, 5];
 
 let set01 = () => new Set(array);
 
-let newArray = Array.from(set01());
+const newArray = Array.from(set01());
 
 console.log(newArray)
 
-// hasOwnProperty()
-// do it with count 
-// reduce()
+// B
 
-// const removeDup = array => {
+const newArray01 = () => console.log(new Set(array));
 
-// } 
+newArray01()
+
+// sau 
+
+const newArray02 = console.log(new Set(array));
+
+// C
 
 const removeDup = array => {
     let prims = {"boolean":{}, "number":{}, "string":{}}, objs = [];
