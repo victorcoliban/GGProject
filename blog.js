@@ -109,23 +109,25 @@ console.log("****** Ex 6 ******")
 
 // showRecentPost()
 
-// showRecentPost = () => {
-//     blogItems.sort(function(a, b) {
-//         return Date.parse(b.date) - Date.parse(a.date);
-//     });
-//     console.log(blogItems[0])
-// }
-
-// showRecentPost()
+showRecentPost = () => {
+    blogItems.sort(function(a, b) {
+        return Date.parse(b.date) - Date.parse(a.date);
+    });
+    console.log(blogItems[0])
+}
 
 // ****** TASK 11 ******
 
-// ******* Ex 2 *******
+// ******* Ex 4 *******
+
+showRecentPost()
+
+// ******* Ex 2 & 5*******
 
 for(i = 0; i < blogItems.length; i++) {
 
     let newDiv = document.createElement('div');
-    newDiv.className = 'card-body text-center';
+    newDiv.className = 'card-body text-center col-lg-4 col-md-6 col-xs-12';
     document.getElementById('card-id').appendChild(newDiv);
     newDiv.setAttribute('id', blogItems[i].id);
 
@@ -150,18 +152,18 @@ for(i = 0; i < blogItems.length; i++) {
     paragraph.append(blogItems[i].description);
 
     let btnReadMore = document.createElement('button');
-    btnReadMore.innerHTML = "Read more...";
-    btnReadMore.className = 'btn-primary';
+    btnReadMore.innerHTML = "Read more";
+    btnReadMore.className = 'small btn btn-outline-secondary';
     newDiv.appendChild(btnReadMore);
 
     let btnEdit = document.createElement('button');
     btnEdit.innerHTML = "Edit";
-    btnEdit.className = 'btn-warning';
+    btnEdit.className = 'small btn btn-outline-secondary';
     newDiv.appendChild(btnEdit);
 
     let btnDelete = document.createElement('button');
     btnDelete.innerHTML = "Delete";
-    btnDelete.className = 'btn-danger';
+    btnDelete.className = 'small btn btn-outline-secondary';
     newDiv.appendChild(btnDelete);
 
 }
@@ -172,14 +174,29 @@ $('.navbar-toggler').click(function() {
     $('.collapse').toggleClass('show');
 })
 
+// document.querySelector('navbar-toggler').addEventListener('click', () => {
+//     document.querySelector('collapse').addEventListener('toggle.show');
+// })
+
+// const burger = document.getElementById('toggle');
+// const menu = document.getElementById('navmenu');
+// burger.addEventListener('click', () => {
+//     menu.classList.toggle('show');
+// });
+
+// js plain 
+
 // ******* 4 *******
 
-showRecentPost = () => {
-    blogItems.sort(function(a, b) {
-        return Date.parse(b.date) - Date.parse(a.date);
-    });
-    let str = JSON.stringify(blogItems[0]);
-    document.getElementById('card-id').innerHTML = str;
-}
+// showRecentPost = () => {
+//     blogItems.sort(function(a, b) {
+//         return Date.parse(b.date) - Date.parse(a.date);
+//     });
+//     // let str = JSON.stringify(blogItems[0]);
+//     // let x = blogItems[0];
+//     document.getElementById('card-id').innerHTML = blogItems[0];
+// }
+
+//  showRecentPost()
 
 showRecentPost()
