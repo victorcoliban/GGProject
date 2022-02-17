@@ -120,7 +120,7 @@ showRecentPost = () => {
 
 // ******* Ex 4 *******
 
-showRecentPost()
+// showRecentPost()
 
 // ******* Ex 2 & 5*******
 
@@ -151,52 +151,45 @@ for(i = 0; i < blogItems.length; i++) {
     newDiv.appendChild(paragraph);
     paragraph.append(blogItems[i].description);
 
+    // let btnGroup = document.createElement('div');
+    // btnGroup.className = 'btn-group';
+    // document.getElementById('card-id').appendChild(btnGroup);
+
+    // let btnGroup = document.getElementById('btn-group-id');
+    // document.getElementById('card-id').innerHTML += "something";
+
+    // btnGroup.innerHTML = newDiv.innerHTML + btnGroup;
+    // newDiv.appendChild(btnGroup);
+    // console.log(newDiv);
+    // newDiv.appendChild(x);
+    // document.getElementById('card-id').appendChild(btnGroup);
+
     let btnReadMore = document.createElement('button');
     btnReadMore.innerHTML = "Read more";
-    btnReadMore.className = 'small btn btn-outline-secondary';
+    btnReadMore.className = 'btn btn-outline-secondary';
     newDiv.appendChild(btnReadMore);
 
     let btnEdit = document.createElement('button');
     btnEdit.innerHTML = "Edit";
-    btnEdit.className = 'small btn btn-outline-secondary';
+    btnEdit.className = 'btn btn-outline-secondary';
     newDiv.appendChild(btnEdit);
 
     let btnDelete = document.createElement('button');
     btnDelete.innerHTML = "Delete";
-    btnDelete.className = 'small btn btn-outline-secondary';
+    btnDelete.className = 'btn btn-outline-secondary';
     newDiv.appendChild(btnDelete);
 
 }
 
 // ******* 3 *******
 
-$('.navbar-toggler').click(function() {
-    $('.collapse').toggleClass('show');
-})
-
-// document.querySelector('navbar-toggler').addEventListener('click', () => {
-//     document.querySelector('collapse').addEventListener('toggle.show');
+// $('.navbar-toggler').click(function() {
+//     $('.collapse').toggleClass('show');
 // })
 
-// const burger = document.getElementById('toggle');
-// const menu = document.getElementById('navmenu');
-// burger.addEventListener('click', () => {
-//     menu.classList.toggle('show');
-// });
+document.querySelector('.navbar-toggler').addEventListener('click', () => {
+    document.querySelector('.collapse').classList.toggle('show');
+})
 
-// js plain 
 
-// ******* 4 *******
 
-// showRecentPost = () => {
-//     blogItems.sort(function(a, b) {
-//         return Date.parse(b.date) - Date.parse(a.date);
-//     });
-//     // let str = JSON.stringify(blogItems[0]);
-//     // let x = blogItems[0];
-//     document.getElementById('card-id').innerHTML = blogItems[0];
-// }
-
-//  showRecentPost()
-
-showRecentPost()
