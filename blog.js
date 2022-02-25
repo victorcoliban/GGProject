@@ -110,7 +110,7 @@ console.log("****** Ex 6 ******")
 // showRecentPost()
 
 showRecentPost = () => {
-    blogItems.sort(function(a, b) {
+    blogItems.sort(function (a, b) {
         return Date.parse(b.date) - Date.parse(a.date);
     });
     console.log(blogItems[0])
@@ -124,12 +124,15 @@ showRecentPost = () => {
 
 // ******* Ex 2 & 5*******
 
-for(i = 0; i < blogItems.length; i++) {
+for (i = 0; i < blogItems.length; i++) {
 
     let newDiv = document.createElement('div');
     newDiv.className = 'card-body text-center col-lg-4 col-md-6 col-xs-12';
     document.getElementById('card-id').appendChild(newDiv);
     newDiv.setAttribute('id', blogItems[i].id);
+
+    // let cardFooterDiv = document.createElement('div');
+    // cardFooterDiv.className = 'card-footer text-center';
 
     let postDate = document.createElement('date'); // might need to change date with input 
     postDate.setAttribute('value', blogItems[i].date);
@@ -150,19 +153,6 @@ for(i = 0; i < blogItems.length; i++) {
     paragraph.className = 'lead card-text container-fluid';
     newDiv.appendChild(paragraph);
     paragraph.append(blogItems[i].description);
-
-    // let btnGroup = document.createElement('div');
-    // btnGroup.className = 'btn-group';
-    // document.getElementById('card-id').appendChild(btnGroup);
-
-    // let btnGroup = document.getElementById('btn-group-id');
-    // document.getElementById('card-id').innerHTML += "something";
-
-    // btnGroup.innerHTML = newDiv.innerHTML + btnGroup;
-    // newDiv.appendChild(btnGroup);
-    // console.log(newDiv);
-    // newDiv.appendChild(x);
-    // document.getElementById('card-id').appendChild(btnGroup);
 
     let btnReadMore = document.createElement('button');
     btnReadMore.innerHTML = "Read more";
@@ -187,9 +177,28 @@ for(i = 0; i < blogItems.length; i++) {
 //     $('.collapse').toggleClass('show');
 // })
 
-document.querySelector('.navbar-toggler').addEventListener('click', () => {
-    document.querySelector('.collapse').classList.toggle('show');
-})
+// document.querySelector('.navbar-toggler').addEventListener('click', () => {
+//     document.querySelector('.collapse').classList.toggle('show');
+// })
 
+// ******* Task 12 *******
 
+function showInputHeader() {
+    let header = document.getElementById('Input1');
+    let para = document.getElementById('Textarea1');
+    let img = document.getElementById('Input4');
+
+    document.getElementById("display1").innerHTML =
+        // document.getElementById("Input1").value + 
+        `
+        <div class="card-body text-center col-lg-4 col-md-6 col-xs-12">
+            <img src="${img.value}" class="img-fluid">
+            <h2 class="card-title">${header.value}</h2> 
+            <p class="lead card-text container-fluid">${para.value}</p> 
+            <button class="btn btn-outline-secondary">Read more</button>
+            <button class="btn btn-outline-secondary">Edit</button>
+            <button class="btn btn-outline-secondary">Delete</button>    
+        </div>
+        `;
+}
 
