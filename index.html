@@ -57,7 +57,7 @@
                 <button type="button" class="btn btn-outline-secondary mb-3" data-toggle="modal" data-target="#exampleModal">
                     Add new post
                 </button>
-                <p><span id='display1'></span></p>
+                <p><span id='display'></span></p>
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -70,38 +70,43 @@
                             </div>
                             <div class="modal-body">
                                 <form>
-                                    <!-- <div class="form-group pb-3">
-                                        <label for="Input1"><strong>ID</strong></label>
-                                        <input class="form-control" id="Input1">
-                                    </div> -->
                                     <div class="form-group pb-3">
-                                        <label for="Input1"><strong>Title</strong></label>
-                                        <input class="form-control" id="Input1">
+                                        <!-- <label for="Input1"><strong>ID</strong></label> -->
+                                        <input class="form-control" id="InputID" placeholder="ID">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="Textarea1"><strong>Description</strong></label>
-                                        <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                                    <div class="form-group pb-3">
+                                        <!-- <label for="Input1"><strong>Title</strong></label> -->
+                                        <input class="form-control" id="InputHeader" placeholder="Title">
                                     </div>
-                                    <!-- <div class="form-group pb-3">
-                                        <label for="Input3"><strong>Date</strong></label>
-                                        <input class="form-control" id="Input3">
-                                    </div> -->
+                                    <div class="form-group pb-3">
+                                        <!-- <label for="Textarea1"><strong>Description</strong></label> -->
+                                        <textarea class="form-control" id="InputPara" rows="3" placeholder="Description"></textarea>
+                                    </div>
+                                    <div class="form-group pb-3">
+                                        <!-- <label for="Input3"><strong>Date</strong></label> -->
+                                        <input class="form-control" id="InputDate" placeholder="Date">
+                                    </div>
                                     <div class="form-group pt-3">
-                                        <label for="Input4"><strong>Image</strong></label>
-                                        <input class="form-control" id="Input4">
+                                        <!-- <label for="Input4"><strong>Image</strong></label> -->
+                                        <input class="form-control" id="InputImg" placeholder="Image">
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-secondary"
                                     data-dismiss="modal">Close</button>
-                                <input type="submit" class="btn btn-outline-success" onclick="showInputHeader();">
+                                <input type="submit" class="btn btn-outline-success" onclick="showInput();">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row gy-3 bg-white h-100" id="card-id">
+            <div class="row gy-3 bg-white h-100 btn-group align-self-bottom" id="card-id">
+                <!-- <div class="btn-group" id="btnId">
+                    <button type="button" class="btn btn-outline-secondary">Read more</button>
+                    <button type="button" class="btn btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-outline-secondary">Delete</button>
+                </div> -->
             </div>
         </div>
     </section>

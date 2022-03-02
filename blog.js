@@ -43,6 +43,13 @@ let blogItems = [
         date: "01/07/2022",
         image: "media/goldenRetriever.jpg"
     },
+    // {
+    //     id: "card-body-7",
+    //     title: "Pug",
+    //     description: "Something",
+    //     date: "01/08/2022",
+    //     image: "media/pug.jpg"
+    // }
 ];
 
 console.log(blogItems);
@@ -124,15 +131,28 @@ showRecentPost = () => {
 
 // ******* Ex 2 & 5*******
 
+
+
+// ******* 3 *******
+
+// $('.navbar-toggler').click(function() {
+//     $('.collapse').toggleClass('show');
+// })
+
+// document.querySelector('.navbar-toggler').addEventListener('click', () => {
+//     document.querySelector('.collapse').classList.toggle('show');
+// })
+
+// ******* Task 12 *******
+
 for (i = 0; i < blogItems.length; i++) {
+
+    displayBlog = () => {
 
     let newDiv = document.createElement('div');
     newDiv.className = 'card-body text-center col-lg-4 col-md-6 col-xs-12';
     document.getElementById('card-id').appendChild(newDiv);
     newDiv.setAttribute('id', blogItems[i].id);
-
-    // let cardFooterDiv = document.createElement('div');
-    // cardFooterDiv.className = 'card-footer text-center';
 
     let postDate = document.createElement('date'); // might need to change date with input 
     postDate.setAttribute('value', blogItems[i].date);
@@ -168,37 +188,38 @@ for (i = 0; i < blogItems.length; i++) {
     btnDelete.innerHTML = "Delete";
     btnDelete.className = 'btn btn-outline-secondary';
     newDiv.appendChild(btnDelete);
+    }
 
+    displayBlog()
 }
 
-// ******* 3 *******
+function showInput() {
 
-// $('.navbar-toggler').click(function() {
-//     $('.collapse').toggleClass('show');
-// })
+    let idInp = document.getElementById('InputID')
+    let headerInp = document.getElementById('InputHeader');
+    let paraInp = document.getElementById('InputPara');
+    let dateInp = document.getElementById('InputDate')
+    let imgInp = document.getElementById('InputImg');
 
-// document.querySelector('.navbar-toggler').addEventListener('click', () => {
-//     document.querySelector('.collapse').classList.toggle('show');
-// })
+    blogItems.push({id: idInp.value, title: headerInp.value, 
+                    description: paraInp.value, date: dateInp.value, 
+                    image: imgInp.value});
+    console.log(blogItems);
 
-// ******* Task 12 *******
-
-function showInputHeader() {
-    let header = document.getElementById('Input1');
-    let para = document.getElementById('Textarea1');
-    let img = document.getElementById('Input4');
-
-    document.getElementById("display1").innerHTML =
-        // document.getElementById("Input1").value + 
-        `
-        <div class="card-body text-center col-lg-4 col-md-6 col-xs-12">
-            <img src="${img.value}" class="img-fluid">
-            <h2 class="card-title">${header.value}</h2> 
-            <p class="lead card-text container-fluid">${para.value}</p> 
-            <button class="btn btn-outline-secondary">Read more</button>
-            <button class="btn btn-outline-secondary">Edit</button>
-            <button class="btn btn-outline-secondary">Delete</button>    
-        </div>
-        `;
+    displayBlog()
+        
 }
 
+// second method to solve Task 12
+
+    // document.getElementById("display").innerHTML = 
+    //     `
+    //     <div class="card-body text-center col-lg-4 col-md-6 col-xs-12">
+    //         <img src="${imgInp.value}" class="img-fluid">
+    //         <h2 class="card-title">${headerInp.value}</h2> 
+    //         <p class="lead card-text container-fluid">${paraInp.value}</p> 
+    //         <button class="btn btn-outline-secondary">Read more</button>
+    //         <button class="btn btn-outline-secondary">Edit</button>
+    //         <button class="btn btn-outline-secondary">Delete</button>    
+    //     </div>
+    //     `;
