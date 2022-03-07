@@ -152,6 +152,7 @@ for (i = 0; i < blogItems.length; i++) {
     let newDiv = document.createElement('div');
     newDiv.className = 'card-body text-center col-lg-4 col-md-6 col-xs-12';
     document.getElementById('card-id').appendChild(newDiv);
+    newDiv.setAttribute('contenteditable', 'false'); 
     newDiv.setAttribute('id', blogItems[i].id);
 
     let postDate = document.createElement('date'); // might need to change date with input 
@@ -171,6 +172,7 @@ for (i = 0; i < blogItems.length; i++) {
 
     let paragraph = document.createElement('p');
     paragraph.className = 'lead card-text container-fluid';
+    paragraph.setAttribute('id', 'para-'+i);
     newDiv.appendChild(paragraph);
     paragraph.append(blogItems[i].description);
 
@@ -181,11 +183,16 @@ for (i = 0; i < blogItems.length; i++) {
 
     let btnEdit = document.createElement('button');
     btnEdit.innerHTML = "Edit";
+    btnEdit.setAttribute('onclick', 'editPost()');
     btnEdit.className = 'btn btn-outline-secondary';
     newDiv.appendChild(btnEdit);
 
+    // let editInp = document.createElement('input');
+    // newDiv.appendChild(editInp);
+
     let btnDelete = document.createElement('button');
     btnDelete.innerHTML = "Delete";
+    btnDelete.setAttribute('onclick', 'deletePost(this)');
     btnDelete.className = 'btn btn-outline-secondary';
     newDiv.appendChild(btnDelete);
     }
@@ -204,10 +211,27 @@ function showInput() {
     blogItems.push({id: idInp.value, title: headerInp.value, 
                     description: paraInp.value, date: dateInp.value, 
                     image: imgInp.value});
-    console.log(blogItems);
+    
+    displayBlog() 
+}
 
-    displayBlog()
-        
+function editPost() {
+    
+    for (i = 0; i < blogItems.length; i++) {
+
+        let paraId = document.getElementById('para-'+i);
+        paraId.setAttribute('contenteditable', 'true');
+    }
+}
+
+let remove = function(){
+    this.parentNode.remove();
+};
+
+function deletePost(blogItems) {
+    // let element = el;
+    // element.remove();
+    blogItems.parentNode.remove(blogItems);
 }
 
 // second method to solve Task 12
